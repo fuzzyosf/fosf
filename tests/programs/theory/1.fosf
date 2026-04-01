@@ -1,0 +1,15 @@
+# sort taxonomy
+bot < thrillerdirector, horrorwriter, producer, string, slasher.
+director, writer, producer < person.
+thrillerdirector < director .
+horrorwriter < writer .
+slasher < thriller (0.5), horror (0.2).
+thriller, horror < movie.
+person, string, movie < top.
+
+# sort definitions
+person := Yp:person(spouse -> Y1:person(spouse -> Yp)).
+thrillerdirector := Yt:thrillerdirector(director_of -> Y2: thriller).
+horrorwriter := Yh:horrorwriter(writer_of -> Y3: horror).
+movie  := Ym:movie(directed_by -> Y5: director).
+string := Ystr:string.

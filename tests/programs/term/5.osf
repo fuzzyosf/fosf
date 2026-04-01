@@ -1,0 +1,11 @@
+movie, person, id, string < top .
+producer, writer, director < person .
+bot < id, movie, string.
+
+
+movie (produced_by -> X : person (name -> top), written_by -> X )
+
+&
+
+movie (directed_by -> Z,
+       written_by -> Z : director (name -> id )) .

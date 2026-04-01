@@ -1,0 +1,14 @@
+bot < p, q .
+p < r, s .
+q < s, t .
+
+r < u .
+s < u .
+s < v .
+t < v  .
+u, v < top .
+
+
+Y : u ( f -> v ( f -> v ))
+&
+X : s ( f ->  X : top  ( f -> t ) ) .

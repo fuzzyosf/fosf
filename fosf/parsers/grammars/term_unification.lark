@@ -1,0 +1,10 @@
+%import .base_osf (COMMENT, TAG, FEATURE, BASE_SORT)
+%import .taxonomy (fuzzysort, sorts, fuzzysorts, declaration, declarations)
+%import .osf_term (term, subterms, subterm, sort, disjunctive_sort, untagged_term, unsorted_term)
+%import common.WS
+%ignore WS
+%ignore COMMENT
+
+?start : program
+
+program : declarations term "&" term "."

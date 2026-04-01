@@ -1,0 +1,8 @@
+a, p < top.
+bot < p, a.
+
+p(f -> a, g -> W)
+
+&
+
+p(f -> F, g -> F).

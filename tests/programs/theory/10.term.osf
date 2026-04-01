@@ -1,0 +1,4 @@
+movie(
+    directed_by -> top(spouse -> W:top),
+    written_by -> W(spouse -> director)
+)

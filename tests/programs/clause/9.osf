@@ -1,0 +1,12 @@
+bot < p, q .
+p < r, s .
+q < s, t .
+
+r < u .
+s < u .
+s < v .
+t < v  .
+u, v < top .
+
+X : r & X.f = X0 & X0 : s & X0.f = X &
+X : r & X.f = Y0 & Y0 : s & Y0.f = X

@@ -1,0 +1,8 @@
+% Taxonomy
+bot < d, s .
+d < e .
+e < f.
+s, f < top .
+
+X0 : top & X = X0 &
+X : f & X.g = X & X : e & X.g = X & X : d & X.h = Y0 & Y0 : top & X.l = Y1 & Y1 : s

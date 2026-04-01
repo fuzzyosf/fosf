@@ -1,0 +1,7 @@
+s, t < u .
+v < s, t .
+bot < v .
+
+X : s & X.a = X1 & X1 : s & X.b = X1 & X.c = X1 & X.d = X2
+& X = Y &
+Y : t & Y.a = Y1 & Y1 : t & Y.b = Y2 & Y2 : t & Y.c = Y2 & Y.e = Y3.

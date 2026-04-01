@@ -1,0 +1,7 @@
+bot < movie, director, slasher, string .
+director < person .
+slasher < horror.
+slasher < thriller (0.5).
+
+X0 : movie & X0.d = X1 & X1 : person & X0.title = X2 & X2 : string & X0.genre = X3 & X3 : thriller &
+Y0 : movie & Y0.d = Y1 & Y1 : director & Y0.genre = Y2 & Y2 : horror & X0 = Y0 .

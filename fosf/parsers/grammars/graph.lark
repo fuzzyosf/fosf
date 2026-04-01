@@ -1,0 +1,14 @@
+%import .base_osf (BASE_SORT, COMMENT)
+%import common.WS
+%import common.FLOAT
+%ignore WS
+%ignore COMMENT
+
+?start       : declarations
+
+declarations : (declaration)+
+
+declaration  : sorts "<" fuzzysorts "."
+fuzzysorts   : fuzzysort ("," fuzzysort)*
+sorts        : BASE_SORT ("," BASE_SORT)*
+fuzzysort    : BASE_SORT ("("FLOAT")")?

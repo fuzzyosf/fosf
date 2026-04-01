@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fosf"
+version = "0.1"
+dependencies = [
+    "bitarray",
+    "lark",
+    "networkx",
+    "tqdm",
+    "numpy"
+]
+requires-python = '>=3.10'
+authors = [
+  {name = "Gian Carlo Milanese", email = "giancarlo.milanese@unimib.it"},
+]
+maintainers = [
+  {name = "Gian Carlo Milanese", email = "giancarlo.milanese@unimib.it"},
+]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/GianCarloMilanese/fosf"
+
+[project.optional-dependencies]
+drawing = [
+    "pygraphviz",
+    "matplotlib"
+]
+test = [
+    "parameterized",
+    "pytest",
+    "coverage",
+]
+docs = [
+    "sphinx",
+    "furo",
+    "sphinx-autodoc-typehints",
+    "myst-nb",
+    "sphinxcontrib-bibtex"
+]
+dev = [
+    "fosf[drawing,test,docs]",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fosf*"]

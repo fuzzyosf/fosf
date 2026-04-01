@@ -1,0 +1,6 @@
+% Taxonomy
+person, id, string < top.
+bot < person, id, string.
+
+X0 : person & X0.name = X1 & X1 : id & X1.first = X2 & X2 : string & X1.last = Y & Y : string & X0.spouse = X3 & X3 : person & X3.name = X4 & X4 : id & X4.last = Y &
+X : person & X.name = Y0 & Y0 : id & Y0.first = Z & X.spouse = Y1 & Y1 : person & Y1.name = Y2 & Y2 : id & Y1.spouse = X & X = X0.

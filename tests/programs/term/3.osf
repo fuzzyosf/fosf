@@ -1,0 +1,16 @@
+u < top .
+s, t < u .
+v < s, t .
+bot < v .
+
+X : s ( a -> X1 : s,
+        b -> X1,
+        c -> X1,
+        d -> X2 )
+
+&
+
+Y : t ( a -> Y1 : t,
+        b -> Y2 : t,
+        c -> Y2,
+        e -> Y3 ) .

@@ -1,0 +1,8 @@
+bot < u, v.
+u < s, t .
+v, s, t < top .
+
+s := Ys:s(f -> Y1:v(f -> Y5:v(f -> Ys))).
+t := Yt:t(g -> Y2:s, h -> Y2).
+u := Yu:u(f -> Y3:v(f -> Y7:v(f -> Yu)), g -> Y4:s, h -> Y4).
+v := Yv:v(g -> Yg:s(n -> Yn:s), h -> Yh:s(n -> Yn2:s)).

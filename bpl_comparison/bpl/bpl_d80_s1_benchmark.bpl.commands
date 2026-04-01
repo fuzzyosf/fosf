@@ -1,0 +1,36 @@
+ld osf/bpl_d80_s1_benchmark.bpl
+statistics(cputime, T0), once(instance_of(s5890_instance, s3)), statistics(cputime, T1), Time is T1 - T0.
+statistics(cputime, T0), findall(D, truth_degree(instance_of(s5890_instance, s3), D), Degrees), max_list(Degrees, Maxdegree), statistics(cputime, T1), Time is T1 - T0.
+
+benchmark_average(Avg, 10000)
+5.590942578e-5
+
+benchmark_truth(AvgTime, TimesMax, 1).
+time_truth_degree_once(s5890_instance, s3, Time, Degree).
+Time = 94.23579264600005,
+Degree = 0.125.
+time_truth_degree_once(s6113_instance, s4, Time, Degree).
+Time = 3.147973601999979,
+Degree = 0.117.
+time_truth_degree_once(s5854_instance, s0, Time, Degree).
+Time = 132.90208454000003,
+Degree = 0.124.
+time_truth_degree_once(s5952_instance, s3, Time, Degree).
+Out of global stack
+time_truth_degree_once(s5882_instance, s2, Time, Degree).
+Time = 29.125567821000004,
+Degree = 0.12.
+time_truth_degree_once(s6075_instance, s5, Time, Degree).
+Out of global stack
+time_truth_degree_once(s6052_instance, s4, Time, Degree).
+Time = 14.593515433999983,
+Degree = 0.125.
+time_truth_degree_once(s6063_instance, s5, Time, Degree).
+Out of global stack
+time_truth_degree_once(s6016_instance, s4, Time, Degree).
+Out of global stack
+time_truth_degree_once(s5929_instance, s2, Time, Degree).
+Time = 354.331661595,
+Degree = 0.125.
+
+np.mean([94.23579264600005, 3.147973601999979, 132.90208454000003, 29.125567821000004, 14.593515433999983, 354.331661595,])

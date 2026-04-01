@@ -1,0 +1,11 @@
+bot < singer, producer, string, slasher, director, writer.
+singer, producer, director, writer < person.
+slasher < thriller, horror.
+thriller, horror < movie.
+person, string, movie < top.
+
+director >< writer >< producer .
+
+person := Yp:person(spouse -> Y1:person(spouse -> Yp)).
+movie  := Ym:movie(directed_by -> Y5: director, written_by -> Y6: writer, produced_by -> Y7: producer).
+string := Ystr:string.

@@ -1,0 +1,9 @@
+bot < a, b.
+b < c (0.2), d (0.8).
+a < c (0.9), d (0.6).
+c, d < e.
+e < f.
+f < top.
+
+X : f & X.g = X & X : top & X.g = X & X.h = X0 & X0 : top & X.l = X1 & X1 : b &
+Y0 : c & Y0.g = Y1 & Y1 : top & Y1.g = Y2 & Y2 : d & X = Y0.

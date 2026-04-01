@@ -1,0 +1,21 @@
+ld osf/bpl_d40_s1_benchmark.bpl
+statistics(cputime, T0), once(instance_of(s690_instance, s3)), statistics(cputime, T1), Time is T1 - T0.
+statistics(cputime, T0), findall(D, truth_degree(instance_of(s690_instance, s3), D), Degrees), max_list(Degrees, Maxdegree), statistics(cputime, T1), Time is T1 - T0.
+
+benchmark_average(Avg, 10000)
+2.956520857e-5
+
+benchmark_truth(AvgTime, TimesMax, 100).
+0.082264278306
+TimesMax = [(0.055465339700000005,0.125),(0.28296891680999997,0.117),(0.06994435418999999,0.125),(0.11698735399999997,0.125),(0.050890026000000005,0.125),(0.022896256459999976,0.163),(0.13107113829000014,0.163),(0.010440786540000033,0.163),(0.05036264959999997,0.163),(0.031615961469999974,0.125)].
+
+time_truth_degree_once(s690_instance, s3, Time, Degree).
+time_truth_degree_once(s718_instance, s4, Time, Degree).
+time_truth_degree_once(s686_instance, s2, Time, Degree).
+time_truth_degree_once(s698_instance, s2, Time, Degree).
+time_truth_degree_once(s689_instance, s3, Time, Degree).
+time_truth_degree_once(s713_instance, s5, Time, Degree).
+time_truth_degree_once(s710_instance, s5, Time, Degree).
+time_truth_degree_once(s712_instance, s4, Time, Degree).
+time_truth_degree_once(s706_instance, s4, Time, Degree).
+time_truth_degree_once(s695_instance, s2, Time, Degree).

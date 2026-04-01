@@ -1,0 +1,4 @@
+bot < s.
+s < top.
+
+s := Ys:s(f -> Y1:s(f -> Y2:s(f -> Y1))).

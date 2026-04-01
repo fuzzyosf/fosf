@@ -1,0 +1,9 @@
+.tests/
+tests/*/generalization
+osf/grammars/term_generalization.lark
+examples/pics
+examples/Untitled*
+*.tpl
+*.tpls
+
+docs/build

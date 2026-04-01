@@ -1,0 +1,28 @@
+ld osf/bpl_d120_s1_benchmark.bpl
+statistics(cputime, T0), once(instance_of(s42572_instance, s2)), statistics(cputime, T1), Time is T1 - T0.
+statistics(cputime, T0), findall(D, truth_degree(instance_of(s42572_instance, s2), D), Degrees), max_list(Degrees, Maxdegree), statistics(cputime, T1), Time is T1 - T0.
+
+benchmark_average(Avg, 10000)
+8.449942308000002e-5
+
+benchmark_truth(AvgTime, TimesMax, 100).
+time_truth_degree_once(s42572_instance, s2, Time, Degree).
+Out of global stack
+time_truth_degree_once(s42280_instance, s2, Time, Degree).
+Out of global stack
+time_truth_degree_once(s43066_instance, s5, Time, Degree).
+Out of global stack
+time_truth_degree_once(s42504_instance, s3, Time, Degree).
+Out of global stack
+time_truth_degree_once(s44051_instance, s4, Time, Degree).
+Out of global stack
+time_truth_degree_once(s43863_instance, s4, Time, Degree).
+Out of global stack
+time_truth_degree_once(s43956_instance, s4, Time, Degree).
+Out of global stack
+time_truth_degree_once(s43576_instance, s5, Time, Degree).
+Out of global stack
+time_truth_degree_once(s42881_instance, s3, Time, Degree).
+Out of global stack
+time_truth_degree_once(s42406_instance, s2, Time, Degree).
+Out of global stack

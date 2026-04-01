@@ -1,0 +1,7 @@
+person, id, string < top .
+jane < string .
+director < person .
+bot < director, id, jane .
+
+Y : director & Y.name = X0 & X0 : id & X0.first = X1 & X1 : jane & Y.spouse = X2 & X2 : director & X2.spouse = Y & Y = Y0 &
+Y0 : person & Y0.name = Y1 & Y1 : id & Y1.last = Z & Z : string & Y0.spouse = Y2 & Y2 : person & Y2.name = Y3 & Y3 : id & Y3.last = Z

@@ -1,0 +1,17 @@
+bot < director, writer, producer, string, slasher.
+director, writer, producer < person.
+slasher < thriller, horror.
+thriller, horror < movie.
+person, string, movie < top.
+
+person   := Yp:person(spouse -> Y1:person(spouse -> Yp)).
+director := Yd:director(spouse -> Y2:person(spouse -> Yd)).
+writer   := Yw:writer(spouse -> Y3:person(spouse -> Yw)).
+producer := Ypr:producer(spouse -> Y4:person(spouse -> Ypr)).
+
+movie    := Ym:movie(directed_by -> Y5: director).
+thriller := Yt:thriller(directed_by -> Y6: director).
+horror   := Yh:horror(directed_by -> Y7: director).
+slasher  := Ys:slasher(directed_by -> Y8: director).
+
+string := Ystr:string.

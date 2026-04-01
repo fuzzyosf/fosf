@@ -1,0 +1,11 @@
+%import .base_osf (COMMENT, TAG, FEATURE, sort, disjunctive_sort)
+%import common.WS
+%ignore WS
+%ignore COMMENT
+
+?start     : clause
+
+clause     : constraint ("&" constraint)* "."?
+constraint : TAG ":" sort          -> sort_constraint
+           | TAG"."FEATURE "=" TAG -> feature_constraint
+           | TAG "=" TAG           -> equality_constraint

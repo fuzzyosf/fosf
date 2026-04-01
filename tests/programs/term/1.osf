@@ -1,0 +1,13 @@
+% Taxonomy
+person, id, string, c < top.
+bot < person, id, string.
+
+% OSF Terms
+person(name -> id(first -> string,
+                  last  -> Y : string),
+       spouse -> person(name -> id(last -> Y)))
+
+&
+
+X : person(name -> id(first -> Z),
+           spouse -> person(name -> id, spouse -> X)).

@@ -1,0 +1,10 @@
+%import .base_osf (COMMENT, TAG, FEATURE, BASE_SORT, disjunctive_sort)
+%import .taxonomy (fuzzysort, sorts, fuzzysorts, declaration, declarations)
+%import .osf_constraints (constraint, clause, sort, sort_constraint, feature_constraint, equality_constraint)
+%import common.WS
+%ignore WS
+%ignore COMMENT
+
+?start : program
+
+program : declarations clause

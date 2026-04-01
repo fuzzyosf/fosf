@@ -1,0 +1,14 @@
+%import common.WS
+%import common.ESCAPED_STRING
+%ignore COMMENT
+%ignore WS
+
+sort             : BASE_SORT
+                 | disjunctive_sort
+BASE_SORT        : ATOM
+                 | ESCAPED_STRING
+disjunctive_sort : "{" BASE_SORT ("," BASE_SORT)* "}"
+FEATURE          : ATOM
+ATOM             : /[a-z]\w*/
+TAG              : /[A-Z]\w*/
+COMMENT          : ("%"|"#")/.*/

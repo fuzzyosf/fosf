@@ -1,0 +1,8 @@
+bot < s, s3.
+s3 < s1, s2.
+s, s1, s2 < top.
+
+s1 := Ys1:s1.
+s2 := Ys2:s2.
+s3 := Ys3:s3.
+s  := Ys:s(a -> Y1:s1, b -> Y:s(a -> Y2:s2)).

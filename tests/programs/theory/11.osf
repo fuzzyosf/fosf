@@ -1,0 +1,10 @@
+bot < u, v, x, y, w, z.
+u < s, t .
+x, y, w, z, v, s, t < top .
+
+x >< y >< z >< w .
+
+v := Yv:v.
+s := Ys:s(f -> Y1:v(f -> Ys)).
+t := Yt:t.
+u := Yu:u(f -> Y3:v(f -> Yu), g -> Y4:top, h -> Y4).

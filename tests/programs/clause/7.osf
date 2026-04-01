@@ -1,0 +1,5 @@
+a, p < top.
+bot < p, a.
+
+X0 : p & X0.f = X1 & X1 : a & X0.g = W &
+Y0 : p & Y0.f = F & Y0.g = F & X0 = Y0.

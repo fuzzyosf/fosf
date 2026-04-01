@@ -1,0 +1,6 @@
+bot < t.
+t < s.
+s < top .
+
+s := Ys:s(h -> Y0:s(h -> Ys), f -> Y1:s, g -> Y2:s).
+t := Yt:t(h -> Y3:s(h -> Yt), f -> Y4:t, g -> Y4).

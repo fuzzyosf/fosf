@@ -1,0 +1,13 @@
+person, id, string < top .
+jane < string .
+director < person .
+bot < director, id, jane .
+
+
+Y : director (name -> id(first -> jane),
+              spouse -> director(spouse -> Y))
+
+&
+
+person(name -> id(last -> Z:string),
+       spouse -> person(name -> id(last -> Z))) .

@@ -1,0 +1,4 @@
+bot < p, a.
+a, p < top.
+
+p(f -> X:a) & X.

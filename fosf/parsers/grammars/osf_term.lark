@@ -1,0 +1,12 @@
+%import .base_osf (COMMENT, TAG, FEATURE, sort, disjunctive_sort)
+%import common.WS
+%ignore WS
+%ignore COMMENT
+
+?start   : term
+
+?term    : sort (subterms)? -> untagged_term
+         | TAG (subterms)?  -> unsorted_term
+         | TAG ":" sort (subterms)? -> term
+subterms : "(" subterm ("," subterm)* ")"
+subterm  : FEATURE ("-"|"=")+">" term

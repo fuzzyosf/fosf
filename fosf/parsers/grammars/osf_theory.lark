@@ -1,0 +1,17 @@
+%import .base_osf (COMMENT, TAG, FEATURE, BASE_SORT)
+%import .taxonomy (fuzzysort, sorts, fuzzysorts, declaration, declarations)
+%import common.WS
+%ignore WS
+%ignore COMMENT
+
+
+?start   : theory
+
+theory : declarations (definition)+
+
+definition  : BASE_SORT ":=" term "."
+
+term        : TAG ":" BASE_SORT (subterms)? -> term
+            | TAG (subterms)?               -> unsorted_term
+subterms    : "(" subterm ("," subterm)* ")"
+subterm     : FEATURE ("-"|"=")+">" term

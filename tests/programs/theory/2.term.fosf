@@ -1,0 +1,5 @@
+X:thrillerdirector(
+    director_of -> X1: top(
+        directed_by -> X,
+        written_by -> X2:horrorwriter(writer_of -> X1)),
+        spouse -> X2)

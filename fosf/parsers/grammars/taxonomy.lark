@@ -1,0 +1,16 @@
+%import .base_osf (BASE_SORT, COMMENT)
+%import .graph (declaration, fuzzysorts, sorts, fuzzysort)
+%import common.WS
+%import common.FLOAT
+%ignore WS
+%ignore COMMENT
+
+?start       : declarations
+
+declarations : (declaration)+ (instance_dec)*
+
+baseinstance  : BASE_SORT
+fuzzyinstance : FLOAT "/" BASE_SORT
+instance      : baseinstance | fuzzyinstance
+instances     : instance ("," instance)*
+instance_dec  : "{" instances "}" "<" sorts "."
