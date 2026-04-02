@@ -24,7 +24,7 @@ license = "GPL-3.0-or-later"
 license-files = ["LICENSE"]
 
 [project.urls]
-Homepage = "https://github.com/GianCarloMilanese/fosf"
+Homepage = "https://github.com/fuzzyosf/fosf"
 
 [project.optional-dependencies]
 drawing = [
